@@ -5,14 +5,14 @@ jobs:
   hello_world:
     runs-on: ubuntu-latest
     steps:
-      -  name: hello
+      -  name: checkout
          run: echo "hello moto"
       -  name: goodbye
          run: echo "good bye"
 
          
       -  name: Lint Code Base
-         uses: super-linter/super-linter@v5
+         uses: super-linter/super-linter@v4
          env:
            VALIDATE_ALL_CODEBASE: false
            DEFAULT_BRANCH: main
